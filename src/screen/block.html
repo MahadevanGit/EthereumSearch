@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethereum demo</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Users/mahagoms/Desktop/EthereumDemo/Web3project/web3pro1/EthereumSearch/src/css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <h4>Ethereum demo</h4>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="block.html">Block</a></li>
+                <li><a href="tx.html">Transaction</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Search Form for Block and Trans start-->
+    <div style="background-color: rgb(4 76 96)">
+        <p class="searchtitle"> The Ethereum Blockchain Explorer</p>
+        <form id="searchBTForm" class="searchForm" style="margin:auto;max-width:800px">
+            <input id="searchBTFormInput" type="text" placeholder="Search by Txn hash / Block " name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!--Search Form for Block and Trans start-->
+
+    <!--Block start-->
+    <h3 style="padding: 30px;padding-bottom:0px">Block info:</h3>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <div class="flex-item-header">
+                <h4>Overview</h4>
+            </div>
+            <hr class="hr-space">
+            </hr>
+
+            <div class="flex-item-block-body">
+                <!--blocks will load dynamically-->
+                <div class="flex-item-body-block-content" id="latestBlockListDiv"></div>
+            </div>
+        </div>
+    </div>
+    <!--Block end-->
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="/Users/mahagoms/Desktop/EthereumDemo/Web3project/web3pro1/EthereumSearch/src/api/block.js"></script>
+    <script src="/Users/mahagoms/Desktop/EthereumDemo/Web3project/web3pro1/EthereumSearch/src/api/api.eth.service.js"></script>
+</body>
+<footer>
+    <div class="pagebg"> This web page is a demostrate of Block Explorer and Analytics Platform for Ethereum, a
+        decentralized smart contracts platform.</div>
+</footer>
+
+
+
+
+</html>
